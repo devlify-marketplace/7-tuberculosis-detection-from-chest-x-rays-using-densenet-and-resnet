@@ -1,0 +1,45 @@
+{
+  "accuracy": 0.6283987915407855,
+  "balanced_accuracy": 0.6285422144317849,
+  "sensitivity": 0.6190476190476191,
+  "specificity": 0.6380368098159509,
+  "precision": 0.6380368098159509,
+  "f1": 0.6283987915407855,
+  "roc_auc": 0.6870709173239848,
+  "mcc": 0.25708442886356997,
+  "confusion_matrix": {
+    "tn": 208,
+    "fp": 118,
+    "fn": 128,
+    "tp": 208
+  },
+  "n": 662,
+  "threshold": 0.5,
+  "confidence_intervals_95": {
+    "accuracy": [
+      0.5936555891238671,
+      0.6661631419939577
+    ],
+    "sensitivity": [
+      0.5684523809523809,
+      0.6697172619047618
+    ],
+    "specificity": [
+      0.5858895705521472,
+      0.6871932515337423
+    ],
+    "roc_auc": [
+      0.648834857946246,
+      0.728600870946538
+    ]
+  },
+  "bootstrap": {
+    "method": "class-stratified percentile",
+    "replicates": 1000,
+    "seed": 42
+  },
+  "split": "external_shenzhen",
+  "architecture": "densenet121",
+  "n_records": 662,
+  "positive_label": "abnormal_tb_associated"
+}

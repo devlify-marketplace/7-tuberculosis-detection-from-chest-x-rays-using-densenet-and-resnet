@@ -1,0 +1,45 @@
+{
+  "accuracy": 0.6525679758308157,
+  "balanced_accuracy": 0.651986561495764,
+  "sensitivity": 0.6904761904761905,
+  "specificity": 0.6134969325153374,
+  "precision": 0.6480446927374302,
+  "f1": 0.6685878962536023,
+  "roc_auc": 0.6870891761612621,
+  "mcc": 0.3049546914797967,
+  "confusion_matrix": {
+    "tn": 200,
+    "fp": 126,
+    "fn": 104,
+    "tp": 232
+  },
+  "n": 662,
+  "threshold": 0.5,
+  "confidence_intervals_95": {
+    "accuracy": [
+      0.6163141993957704,
+      0.6873111782477341
+    ],
+    "sensitivity": [
+      0.6398809523809523,
+      0.7410714285714286
+    ],
+    "specificity": [
+      0.5552147239263804,
+      0.6656441717791411
+    ],
+    "roc_auc": [
+      0.6480504126497225,
+      0.7240945899065148
+    ]
+  },
+  "bootstrap": {
+    "method": "class-stratified percentile",
+    "replicates": 1000,
+    "seed": 42
+  },
+  "split": "external_shenzhen",
+  "architecture": "resnet50",
+  "n_records": 662,
+  "positive_label": "abnormal_tb_associated"
+}

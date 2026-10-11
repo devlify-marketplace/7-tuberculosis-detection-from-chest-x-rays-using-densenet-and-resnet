@@ -1,0 +1,23 @@
+{
+  "architecture": "resnet50",
+  "pretrained_imagenet": true,
+  "freeze_backbone": true,
+  "image_size": 224,
+  "best_epoch": 8,
+  "best_validation_loss": 0.6269539481117612,
+  "device": "cpu",
+  "seed": 42,
+  "torch_version": "2.7.1+cu126",
+  "torchvision_version": "0.22.1+cu126",
+  "training_config": {
+    "batch_size": 8,
+    "epochs_requested": 8,
+    "learning_rate": 0.0005,
+    "weight_decay": 0.0001,
+    "patience": 3,
+    "num_workers": 2
+  },
+  "training_records": 96,
+  "validation_records": 21,
+  "positive_class": "abnormal_tb_associated"
+}

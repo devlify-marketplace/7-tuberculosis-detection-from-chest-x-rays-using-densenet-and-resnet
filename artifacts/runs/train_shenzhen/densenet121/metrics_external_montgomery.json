@@ -1,0 +1,45 @@
+{
+  "accuracy": 0.5579710144927537,
+  "balanced_accuracy": 0.6092672413793103,
+  "sensitivity": 0.9310344827586207,
+  "specificity": 0.2875,
+  "precision": 0.4864864864864865,
+  "f1": 0.6390532544378699,
+  "roc_auc": 0.7306034482758621,
+  "mcc": 0.27191651984787535,
+  "confusion_matrix": {
+    "tn": 23,
+    "fp": 57,
+    "fn": 4,
+    "tp": 54
+  },
+  "n": 138,
+  "threshold": 0.5,
+  "confidence_intervals_95": {
+    "accuracy": [
+      0.4927536231884058,
+      0.6231884057971014
+    ],
+    "sensitivity": [
+      0.8620689655172413,
+      0.9827586206896551
+    ],
+    "specificity": [
+      0.1875,
+      0.3875
+    ],
+    "roc_auc": [
+      0.6400754310344827,
+      0.8034644396551723
+    ]
+  },
+  "bootstrap": {
+    "method": "class-stratified percentile",
+    "replicates": 1000,
+    "seed": 42
+  },
+  "split": "external_montgomery",
+  "architecture": "densenet121",
+  "n_records": 138,
+  "positive_label": "abnormal_tb_associated"
+}

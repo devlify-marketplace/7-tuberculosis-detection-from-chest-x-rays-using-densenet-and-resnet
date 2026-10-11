@@ -1,0 +1,17 @@
+flowchart TD
+    A[Official NLM Shenzhen PNGs] --> C[Filename labels and image validation]
+    B[Official NLM Montgomery PNGs] --> C
+    C --> D[Per-source stratified 70 / 15 / 15 split]
+    D --> E[ImageNet-pretrained DenseNet121]
+    D --> F[ImageNet-pretrained ResNet50]
+    E --> G[Train on Shenzhen; validate; held-out Shenzhen test]
+    E --> H[External evaluation on all Montgomery cases]
+    F --> I[Train on Montgomery; validate; held-out Montgomery test]
+    F --> J[External evaluation on all Shenzhen cases]
+    G --> K[Metrics, bootstrap intervals, predictions, plots]
+    H --> K
+    I --> K
+    J --> K
+    E --> L[Checkpoint]
+    F --> L
+    L --> M[Local FastAPI inference + browser demo]

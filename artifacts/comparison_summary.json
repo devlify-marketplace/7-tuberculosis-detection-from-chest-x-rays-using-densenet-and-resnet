@@ -1,0 +1,394 @@
+[
+  {
+    "accuracy": 0.8571428571428571,
+    "balanced_accuracy": 0.8472222222222222,
+    "sensitivity": 0.7777777777777778,
+    "specificity": 0.9166666666666666,
+    "precision": 0.875,
+    "f1": 0.8235294117647058,
+    "roc_auc": 0.8796296296296295,
+    "mcc": 0.7076731463403724,
+    "confusion_matrix": {
+      "tn": 11,
+      "fp": 1,
+      "fn": 2,
+      "tp": 7
+    },
+    "n": 21,
+    "threshold": 0.5,
+    "confidence_intervals_95": {
+      "accuracy": [
+        0.7142857142857143,
+        1.0
+      ],
+      "sensitivity": [
+        0.4444444444444444,
+        1.0
+      ],
+      "specificity": [
+        0.75,
+        1.0
+      ],
+      "roc_auc": [
+        0.6574074074074074,
+        1.0
+      ]
+    },
+    "bootstrap": {
+      "method": "class-stratified percentile",
+      "replicates": 1000,
+      "seed": 42
+    },
+    "split": "internal_montgomery_test",
+    "architecture": "densenet121",
+    "n_records": 21,
+    "positive_label": "abnormal_tb_associated",
+    "train_source": "montgomery",
+    "evaluation_source": "montgomery",
+    "evaluation_type": "internal_test",
+    "checkpoint": "artifacts/runs/train_montgomery/densenet121/best_model.pt"
+  },
+  {
+    "accuracy": 0.6283987915407855,
+    "balanced_accuracy": 0.6285422144317849,
+    "sensitivity": 0.6190476190476191,
+    "specificity": 0.6380368098159509,
+    "precision": 0.6380368098159509,
+    "f1": 0.6283987915407855,
+    "roc_auc": 0.6870709173239848,
+    "mcc": 0.25708442886356997,
+    "confusion_matrix": {
+      "tn": 208,
+      "fp": 118,
+      "fn": 128,
+      "tp": 208
+    },
+    "n": 662,
+    "threshold": 0.5,
+    "confidence_intervals_95": {
+      "accuracy": [
+        0.5936555891238671,
+        0.6661631419939577
+      ],
+      "sensitivity": [
+        0.5684523809523809,
+        0.6697172619047618
+      ],
+      "specificity": [
+        0.5858895705521472,
+        0.6871932515337423
+      ],
+      "roc_auc": [
+        0.648834857946246,
+        0.728600870946538
+      ]
+    },
+    "bootstrap": {
+      "method": "class-stratified percentile",
+      "replicates": 1000,
+      "seed": 42
+    },
+    "split": "external_shenzhen",
+    "architecture": "densenet121",
+    "n_records": 662,
+    "positive_label": "abnormal_tb_associated",
+    "train_source": "montgomery",
+    "evaluation_source": "shenzhen",
+    "evaluation_type": "external",
+    "checkpoint": "artifacts/runs/train_montgomery/densenet121/best_model.pt"
+  },
+  {
+    "accuracy": 0.8095238095238095,
+    "balanced_accuracy": 0.7777777777777778,
+    "sensitivity": 0.5555555555555556,
+    "specificity": 1.0,
+    "precision": 1.0,
+    "f1": 0.7142857142857143,
+    "roc_auc": 0.9074074074074074,
+    "mcc": 0.6454972243679028,
+    "confusion_matrix": {
+      "tn": 12,
+      "fp": 0,
+      "fn": 4,
+      "tp": 5
+    },
+    "n": 21,
+    "threshold": 0.5,
+    "confidence_intervals_95": {
+      "accuracy": [
+        0.6666666666666666,
+        0.9523809523809523
+      ],
+      "sensitivity": [
+        0.2222222222222222,
+        0.8888888888888888
+      ],
+      "specificity": [
+        1.0,
+        1.0
+      ],
+      "roc_auc": [
+        0.75,
+        1.0
+      ]
+    },
+    "bootstrap": {
+      "method": "class-stratified percentile",
+      "replicates": 1000,
+      "seed": 42
+    },
+    "split": "internal_montgomery_test",
+    "architecture": "resnet50",
+    "n_records": 21,
+    "positive_label": "abnormal_tb_associated",
+    "train_source": "montgomery",
+    "evaluation_source": "montgomery",
+    "evaluation_type": "internal_test",
+    "checkpoint": "artifacts/runs/train_montgomery/resnet50/best_model.pt"
+  },
+  {
+    "accuracy": 0.6525679758308157,
+    "balanced_accuracy": 0.651986561495764,
+    "sensitivity": 0.6904761904761905,
+    "specificity": 0.6134969325153374,
+    "precision": 0.6480446927374302,
+    "f1": 0.6685878962536023,
+    "roc_auc": 0.6870891761612621,
+    "mcc": 0.3049546914797967,
+    "confusion_matrix": {
+      "tn": 200,
+      "fp": 126,
+      "fn": 104,
+      "tp": 232
+    },
+    "n": 662,
+    "threshold": 0.5,
+    "confidence_intervals_95": {
+      "accuracy": [
+        0.6163141993957704,
+        0.6873111782477341
+      ],
+      "sensitivity": [
+        0.6398809523809523,
+        0.7410714285714286
+      ],
+      "specificity": [
+        0.5552147239263804,
+        0.6656441717791411
+      ],
+      "roc_auc": [
+        0.6480504126497225,
+        0.7240945899065148
+      ]
+    },
+    "bootstrap": {
+      "method": "class-stratified percentile",
+      "replicates": 1000,
+      "seed": 42
+    },
+    "split": "external_shenzhen",
+    "architecture": "resnet50",
+    "n_records": 662,
+    "positive_label": "abnormal_tb_associated",
+    "train_source": "montgomery",
+    "evaluation_source": "shenzhen",
+    "evaluation_type": "external",
+    "checkpoint": "artifacts/runs/train_montgomery/resnet50/best_model.pt"
+  },
+  {
+    "accuracy": 0.83,
+    "balanced_accuracy": 0.8321328531412565,
+    "sensitivity": 0.7254901960784313,
+    "specificity": 0.9387755102040817,
+    "precision": 0.925,
+    "f1": 0.8131868131868132,
+    "roc_auc": 0.8995598239295719,
+    "mcc": 0.6778277412775349,
+    "confusion_matrix": {
+      "tn": 46,
+      "fp": 3,
+      "fn": 14,
+      "tp": 37
+    },
+    "n": 100,
+    "threshold": 0.5,
+    "confidence_intervals_95": {
+      "accuracy": [
+        0.76,
+        0.89
+      ],
+      "sensitivity": [
+        0.6073529411764705,
+        0.8431372549019608
+      ],
+      "specificity": [
+        0.8571428571428571,
+        1.0
+      ],
+      "roc_auc": [
+        0.8343337334933973,
+        0.9499899959983994
+      ]
+    },
+    "bootstrap": {
+      "method": "class-stratified percentile",
+      "replicates": 1000,
+      "seed": 42
+    },
+    "split": "internal_shenzhen_test",
+    "architecture": "densenet121",
+    "n_records": 100,
+    "positive_label": "abnormal_tb_associated",
+    "train_source": "shenzhen",
+    "evaluation_source": "shenzhen",
+    "evaluation_type": "internal_test",
+    "checkpoint": "artifacts/runs/train_shenzhen/densenet121/best_model.pt"
+  },
+  {
+    "accuracy": 0.5579710144927537,
+    "balanced_accuracy": 0.6092672413793103,
+    "sensitivity": 0.9310344827586207,
+    "specificity": 0.2875,
+    "precision": 0.4864864864864865,
+    "f1": 0.6390532544378699,
+    "roc_auc": 0.7306034482758621,
+    "mcc": 0.27191651984787535,
+    "confusion_matrix": {
+      "tn": 23,
+      "fp": 57,
+      "fn": 4,
+      "tp": 54
+    },
+    "n": 138,
+    "threshold": 0.5,
+    "confidence_intervals_95": {
+      "accuracy": [
+        0.4927536231884058,
+        0.6231884057971014
+      ],
+      "sensitivity": [
+        0.8620689655172413,
+        0.9827586206896551
+      ],
+      "specificity": [
+        0.1875,
+        0.3875
+      ],
+      "roc_auc": [
+        0.6400754310344827,
+        0.8034644396551723
+      ]
+    },
+    "bootstrap": {
+      "method": "class-stratified percentile",
+      "replicates": 1000,
+      "seed": 42
+    },
+    "split": "external_montgomery",
+    "architecture": "densenet121",
+    "n_records": 138,
+    "positive_label": "abnormal_tb_associated",
+    "train_source": "shenzhen",
+    "evaluation_source": "montgomery",
+    "evaluation_type": "external",
+    "checkpoint": "artifacts/runs/train_shenzhen/densenet121/best_model.pt"
+  },
+  {
+    "accuracy": 0.8,
+    "balanced_accuracy": 0.8023209283713486,
+    "sensitivity": 0.6862745098039216,
+    "specificity": 0.9183673469387755,
+    "precision": 0.8974358974358975,
+    "f1": 0.7777777777777778,
+    "roc_auc": 0.8699479791916767,
+    "mcc": 0.6197037372471269,
+    "confusion_matrix": {
+      "tn": 45,
+      "fp": 4,
+      "fn": 16,
+      "tp": 35
+    },
+    "n": 100,
+    "threshold": 0.5,
+    "confidence_intervals_95": {
+      "accuracy": [
+        0.73,
+        0.87
+      ],
+      "sensitivity": [
+        0.5686274509803921,
+        0.803921568627451
+      ],
+      "specificity": [
+        0.8367346938775511,
+        0.9795918367346939
+      ],
+      "roc_auc": [
+        0.7963085234093639,
+        0.9339735894357742
+      ]
+    },
+    "bootstrap": {
+      "method": "class-stratified percentile",
+      "replicates": 1000,
+      "seed": 42
+    },
+    "split": "internal_shenzhen_test",
+    "architecture": "resnet50",
+    "n_records": 100,
+    "positive_label": "abnormal_tb_associated",
+    "train_source": "shenzhen",
+    "evaluation_source": "shenzhen",
+    "evaluation_type": "internal_test",
+    "checkpoint": "artifacts/runs/train_shenzhen/resnet50/best_model.pt"
+  },
+  {
+    "accuracy": 0.5797101449275363,
+    "balanced_accuracy": 0.6185344827586207,
+    "sensitivity": 0.8620689655172413,
+    "specificity": 0.375,
+    "precision": 0.5,
+    "f1": 0.6329113924050633,
+    "roc_auc": 0.7392241379310346,
+    "mcc": 0.26196417094758223,
+    "confusion_matrix": {
+      "tn": 30,
+      "fp": 50,
+      "fn": 8,
+      "tp": 50
+    },
+    "n": 138,
+    "threshold": 0.5,
+    "confidence_intervals_95": {
+      "accuracy": [
+        0.5072463768115942,
+        0.6521739130434783
+      ],
+      "sensitivity": [
+        0.7758620689655172,
+        0.9482758620689655
+      ],
+      "specificity": [
+        0.275,
+        0.4875
+      ],
+      "roc_auc": [
+        0.6558189655172414,
+        0.8230872844827586
+      ]
+    },
+    "bootstrap": {
+      "method": "class-stratified percentile",
+      "replicates": 1000,
+      "seed": 42
+    },
+    "split": "external_montgomery",
+    "architecture": "resnet50",
+    "n_records": 138,
+    "positive_label": "abnormal_tb_associated",
+    "train_source": "shenzhen",
+    "evaluation_source": "montgomery",
+    "evaluation_type": "external",
+    "checkpoint": "artifacts/runs/train_shenzhen/resnet50/best_model.pt"
+  }
+]
