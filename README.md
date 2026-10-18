@@ -4,6 +4,12 @@
 
 > **Research-only scope.** Labels distinguish normal images from images marked abnormal/TB-associated in the collection. This is not a validated TB diagnosis, medical device, or replacement for radiologist assessment, laboratory testing or clinical judgement. Do not use its outputs for patient care.
 
+## Devlify
+
+An academic project in the [Devlify GitHub collection](https://github.com/devlify-marketplace).
+
+[Visit Devlify](https://devlify.com.ng) · [Browse the marketplace](https://devlify.com.ng/marketplace)
+
 ## What is included
 
 - `scripts/download_dataset.py` — retrieves the official NLM PNG files directly, verifies each image, and writes a SHA-256 inventory. The multi-gigabyte source data are **not** included in this code bundle.
